@@ -1,0 +1,12 @@
+{
+  "name": "DAY2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "less": "^2.7.3"
+  },
+  "devDependencies": {
+    "jquery": "^3.2.1"
+  }
+}
