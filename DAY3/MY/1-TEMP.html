@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>珠峰培训</title>
+</head>
+<body>
+<script>
+    let fn = ()=> {
+        console.log(this);
+    };
+
+    let obj = {
+        aa: function () {
+            console.log(this);//=>obj
+            fn();
+        }
+    };
+    obj.aa();
+
+
+</script>
+</body>
+</html>
