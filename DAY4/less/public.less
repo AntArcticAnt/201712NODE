@@ -1,0 +1,11 @@
+@color: 'red';
+
+.transition(@property:all,@duration:1s,@timing:linear,@delay:0s) {
+  -webkit-transition: @arguments;
+  transition: @arguments;
+}
+
+.transformScale(@n:1){
+  -webkit-transform: scale(@n);
+  transform: scale(@n);
+}

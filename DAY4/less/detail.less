@@ -1,0 +1,12 @@
+@import (reference) "public";
+
+div {
+  width: 100px;
+  height: 100px;
+  background: @color;
+  .transition(@duration: .3s);
+
+  &:hover {
+    .transformScale(1.5);
+  }
+}
