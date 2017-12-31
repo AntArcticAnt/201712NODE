@@ -5,7 +5,7 @@ let mime = require('./BACK/mime');
 
 http.createServer((req, res)=> {
     let {url:reqURL, method, headers}=req,
-        {pathname, query, hash}=url.parse(reqURL);
+        {pathname, query}=url.parse(reqURL);
 
     //=>通过请求的PATH-NAME获取后缀名(通过后缀名获取MIME)
     let regPATH = /\.([a-zA-Z0-9]+)/i;
@@ -25,6 +25,4 @@ http.createServer((req, res)=> {
         });
         res.end(con);
     }
-
-
 }).listen(9999);
